@@ -1,4 +1,4 @@
-// Alerta en caso de tener o no los campos ingresados de manera correcta
+//Saltar Alerta en caso de tener o no los campos ingresados de manera correcta //
 $.validator.setDefaults({
   invalidHandler: function () {
     alert("Tienes un campo mal ingresado");
@@ -8,7 +8,7 @@ $.validator.setDefaults({
     onclick = location.href = "formulario-enviado.html";
   },
 });
-// validador de password
+// validador de Contrasenia
 $.validator.addMethod(
   "especialPass",
   function (value, element) {
@@ -41,14 +41,14 @@ $(document).ready(function () {
         especialPass: true,
       },
     },
-    // mensajes de respuesta, segun la falla
+    // Mensaje en caso de error
     messages: {
       usuario: {
-        required: "Por favor, ingresa tu nombre de usuario",
+        required: "Por favor, ingrese u nombre de usuario",
       },
 
       password: {
-        required: "Por favor, ingresa una contraseña",
+        required: "Por favor, ingrese una contraseña",
       },
     },
     highlight: function (element) {
